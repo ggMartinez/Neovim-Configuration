@@ -71,7 +71,6 @@ return packer.startup(function(use)
 	-- Indent plugins
 	use "lukas-reineke/indent-blankline.nvim"
 
-
 	-- Disabled plugins
        --[[ use 'romgrk/barbar.nvim' ]]
 
