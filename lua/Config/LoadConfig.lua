@@ -1,0 +1,6 @@
+require("config.VimOptions")
+require("config.Themes")
+require("config.LoadPlugins")
+require("config.plugins.AirLine")
+require("config.plugins.IndentBlankLine")
+require("config.plugins.NvimTreeToggle")
