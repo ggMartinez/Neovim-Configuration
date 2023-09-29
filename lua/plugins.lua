@@ -48,7 +48,7 @@ return packer.startup(function(use)
     use { "catppuccin/nvim", as = "catppuccin" }
     use "rebelot/kanagawa.nvim"
 
-        -- Languages support - Terraform
+    -- Languages support - Terraform
     use "hashivim/vim-terraform"
 
     -- Nvim Tree
