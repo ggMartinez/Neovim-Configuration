@@ -1,2 +1,6 @@
 require('gitsigns').setup()
 require('Comment').setup()
+require("toggleterm").setup()
+require("Config.Plugins.AirLine")
+require("Config.Plugins.IndentBlankLine")
+require("Config.Plugins.NvimTreeToggle")

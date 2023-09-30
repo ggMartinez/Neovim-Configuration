@@ -51,6 +51,10 @@ return packer.startup(function(use)
     -- Languages support - Terraform
     use "hashivim/vim-terraform"
 
+
+    -- Terminal Plugin
+    use {"akinsho/toggleterm.nvim", tag = '*'}
+
     -- Nvim Tree
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-tree/nvim-web-devicons'
@@ -61,6 +65,7 @@ return packer.startup(function(use)
 
     -- Comments plugins
     use 'numToStr/Comment.nvim'
+
 
 
     -- NVim Airline
