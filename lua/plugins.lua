@@ -55,6 +55,18 @@ return packer.startup(function(use)
     -- Terminal Plugin
     use {"akinsho/toggleterm.nvim", tag = '*'}
 
+    -- Telescope 
+    use {
+        'nvim-telescope/telescope.nvim', 
+	tag = '0.1.3',
+	requires = { 
+	    {
+                'nvim-lua/plenary.nvim'
+	    } 
+        }
+    }
+
+
     -- Nvim Tree
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-tree/nvim-web-devicons'
