@@ -88,6 +88,9 @@ return packer.startup(function(use)
     -- Indent plugins
     use "lukas-reineke/indent-blankline.nvim"
 
+    -- Markdown Preview
+    use 'iamcco/markdown-preview.nvim'
+
     -- Disabled plugins
     --[[ use 'romgrk/barbar.nvim' ]]
 
