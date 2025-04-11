@@ -42,6 +42,10 @@ packer.init({
 return packer.startup(function(use)
     use "wbthomason/packer.nvim" -- Have packer manage itself    
 
+    -- LSP 
+    
+    use 'neovim/nvim-lspconfig'
+
     -- Themes 
     use 'Mofiqul/vscode.nvim'
     use 'bluz71/vim-nightfly-colors'
@@ -86,7 +90,10 @@ return packer.startup(function(use)
 
     
     -- Indent plugins
-    use "lukas-reineke/indent-blankline.nvim"
+    use {
+        "lukas-reineke/indent-blankline.nvim",
+        tag = 'v3.8.2',
+    }
 
     -- Markdown Preview
     use 'iamcco/markdown-preview.nvim'
