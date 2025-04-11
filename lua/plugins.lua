@@ -44,7 +44,7 @@ return packer.startup(function(use)
 
     -- LSP 
     
-    use 'neovim/nvim-lspconfig'
+    -- use 'neovim/nvim-lspconfig'
 
     -- Themes 
     use 'Mofiqul/vscode.nvim'
