@@ -88,7 +88,8 @@ return packer.startup(function(use)
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
 
-    
+	use 'folke/trouble.nvim'
+	use 'nvim-treesitter/nvim-treesitter'
     -- Indent plugins
     use {
         "lukas-reineke/indent-blankline.nvim",
