@@ -1,7 +1,3 @@
---vim.api.nvim_set_keymap('n', '<S-T>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
--- vim.api.nvim_set_keymap('n', '<S-R>', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
-
-
 -- Track last non-tree window (create an augroup to avoid duplicate autocmds)
 vim.api.nvim_create_augroup("MyNvimTreeFocus", { clear = true })
 
@@ -51,8 +47,16 @@ _G.toggle_nvimtree_focus = function()
   end
 end
 
--- your mapping (Shift+T)
+
+
+-- Toggle nvim-tree
+vim.api.nvim_set_keymap('n', '<S-R>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+-- Switch between code and nvim-tree
 vim.keymap.set("n", "<S-T>", _G.toggle_nvimtree_focus, { noremap = true, silent = true, desc = "Toggle focus: NvimTree <-> code" })
+
+
+
+
 
 require("nvim-tree").setup({
     git = {
