@@ -50,7 +50,7 @@ end
 
 
 -- Toggle nvim-tree
-vim.api.nvim_set_keymap('n', '<S-R>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 -- Switch between code and nvim-tree
 vim.keymap.set("n", "<S-T>", _G.toggle_nvimtree_focus, { noremap = true, silent = true, desc = "Toggle focus: NvimTree <-> code" })
 
